@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/app",
     "build": "tsc",
+    "build:proto": "ts-proto --protoFiles=./src/proto --outputDir=./dist/proto",
     "test": "cross-env NODE_ENV=development jest --detectOpenHandles",
     "start:dev": "cross-env NODE_ENV=development nodemon src/app.ts",
     "start:prod": "cross-env NODE_ENV=production nodemon dist/app",
@@ -46,6 +47,7 @@
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
     "ts-node": "^10.9.1",
+    "ts-proto": "^1.151.0",
     "typescript": "^5.1.6"
   }
 }

@@ -1,6 +1,7 @@
 import path from 'path';
 import grpc, { Client, methodTypes } from "grpc";
 import {loadSync} from "@grpc/proto-loader";
+console.log("ogogogogog"+__dirname);
 
 var packageDefinition = loadSync(path.join(__dirname, './proto/user.proto'), {
     keepCase: true,
